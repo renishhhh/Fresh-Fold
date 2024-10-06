@@ -55,7 +55,7 @@ const Login = () => {
               <label><input type="checkbox" className="accent-blue-600 font-semibold " /> Remember Me</label>
               <a className="text-blue-600 hover:underline font-semibold ">Forgot Password?</a>
             </div>
-            <button type="submit" className="w-full h-12 bg-blue-600 rounded-lg text-white ">Login</button>
+            <button type="submit" className="w-full h-12 bg-blue-600 rounded-lg text-white font-semibold ">Login</button>
             <div className="text-center text-blue-600 mt-6 font-semibold ">
               <p>Don't have an account? <button onClick={handleRegisterClick} className="text-blue-600 hover:underline">Sign In</button></p>
             </div>
