@@ -45,6 +45,7 @@ const Services = () => {
                    <p className='text-zinc-900 pl-40 pr-40 text-lg mb-72  '>At Fresh Fold, we take laundry care to the next level with a thorough, step-by-step process to give your clothes the quality they deserve. Entrust us with your laundry needs and experience the ease of receiving clothes that are fresh, spotless, and perfectly folded—ready to wear right out of the bag!</p>
                 </div>
             </div>
+            
 <div className="separate bg-cyan-400 w-full h-2 mt-16 "></div>
 
 <div className=" flex justify-around mt-16 bg-[rgb(253,250,238)]">
