@@ -9,7 +9,7 @@ const Footer = () => {
     <img className='w-20' src="./public/logo.png" alt="" />
       <span className="ml-1 text-2xl font-bebas">Fresh Fold</span>
     </a>
-    <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Copyright Fresh Fold
+    <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Fresh Fold.All rights reserved
     </p>
     <span className="inline-flex sm:ml-auto sm:mt-3 mt-4 justify-center sm:justify-start">
     <a 
