@@ -8,7 +8,7 @@ const Services = () => {
     <div className="relative">
                 <img src="./public/services.jpg" alt="" className="w-full h-96 object-cover" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <h2 className="text-white text-7xl font-bold font-bebas">Our Services</h2>
+                    <h2 className=" text-7xl font-bold font-bebas text-black">Our Services</h2>
                 </div>
             </div>
 
