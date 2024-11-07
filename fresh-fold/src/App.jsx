@@ -7,7 +7,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Carousel from './components/Carousel'
 import Contact from './components/Contact'
 import About from './components/About'
-import Services from './components/Services'
+import Services from './Service/Services'
+import Laundry from './Service/Laundry'
 
 const MainLayout = () => (
   <>
@@ -44,7 +45,12 @@ function App() {
     {
       path: "/services",
       element: <><Navbar /><Services/><Contact /><Footer/></>,
-      errorElement: <ErrorPage />,  
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/services/laundry",
+      element: <><Navbar /><Laundry/></>,
+      errorElement: <ErrorPage />,
     },
   ]);
 

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link as ScrollLink } from 'react-scroll';
+import { Outlet, Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -14,7 +16,8 @@ const Services = () => {
     {/* Card 1 - Laundry */}
     <div className="service-card group transform transition duration-300 hover:scale-105 shadow-lg p-4 rounded-lg">
         <img src="./public/laundry.jpg" alt="Laundry" className="w-full h-48 object-cover rounded-md" />
-        <h3 className="text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer">Laundry</h3>
+        <Link className="mr-7 text-2xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer flex justify-center items-center" to="/services/laundry">Laundry</Link>
+
     </div>
 
     {/* Card 2 - Dry Cleaning */}
@@ -35,6 +38,7 @@ const Services = () => {
         <h3 className="text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer">Ironing Service</h3>
     </div>
 </div>
+
 
 <div className="separate bg-cyan-400 w-full h-2 mt-5 "></div>
 
@@ -76,8 +80,11 @@ const Services = () => {
             </div>
 
             <div className="separate bg-cyan-400 w-full h-2 mt-16 "></div>
+            <Outlet />
     </>
   )
 }
 
 export default Services
+
+
