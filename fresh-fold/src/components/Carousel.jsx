@@ -1,12 +1,13 @@
+import { width } from '@fortawesome/free-solid-svg-icons/fa0';
 import React, { useState } from 'react';
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    { src: "https://images.pexels.com/photos/1134986/pexels-photo-1134986.jpeg?auto=compress&cs=tinysrgb&w=600", alt: "First slide" },
-    { src: "https://images.pexels.com/photos/1134986/pexels-photo-1134986.jpeg?auto=compress&cs=tinysrgb&w=600", alt: "Second slide" },
-    { src: "https://images.pexels.com/photos/1134986/pexels-photo-1134986.jpeg?auto=compress&cs=tinysrgb&w=600", alt: "Third slide" }
+    { src: "./public/carousel1.png", alt: "First slide",  },
+    { src: "./public/carousel2.png", alt: "Second slide" },
+    { src: "./public/carousel3.png", alt: "Third slide" }
   ];
 
   const handlePrev = () => {
@@ -18,7 +19,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-[65%] h-full mx-auto overflow-hidden rounded-lg shadow-lg ">
+    <div className="relative w-[100%] h-auto mx-auto overflow-hidden rounded-lg shadow-lg ">
       <div
         className="flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}

@@ -16,26 +16,27 @@ const Services = () => {
     {/* Card 1 - Laundry */}
     <div className="service-card group transform transition duration-300 hover:scale-105 shadow-lg p-4 rounded-lg">
         <img src="./public/laundry.jpg" alt="Laundry" className="w-full h-48 object-cover rounded-md" />
-        <Link className="mr-7 text-2xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer flex justify-center items-center" to="/services/laundry">Laundry</Link>
+        <Link className="mr-7 text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer flex justify-center items-center" to="/services/laundry">Laundry</Link>
 
     </div>
 
     {/* Card 2 - Dry Cleaning */}
+    
     <div className="service-card group transform transition duration-300 hover:scale-105 shadow-lg p-4 rounded-lg">
         <img src="./public/dryclean.jpg" alt="Dry Cleaning" className="w-full h-48 object-cover rounded-md" />
-        <h3 className="text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer">Dry Cleaning</h3>
+        <Link className="mr-7 text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer flex justify-center items-center" to="/services/drycleaning">Dry Cleaning</Link>
     </div>
 
     {/* Card 3 - Shoe Cleaning */}
     <div className="service-card group transform transition duration-300 hover:scale-105 shadow-lg p-4 rounded-lg">
         <img src="./public/shoeclean.avif" alt="Shoe Cleaning" className="w-full h-48 object-cover rounded-md" />
-        <h3 className="text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer">Shoe Cleaning</h3>
+        <Link className="mr-7 text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer flex justify-center items-center" to="/services/shoecleaning">Shoe Cleaning</Link>
     </div>
 
     {/* Card 4 - Ironing Service */}
     <div className="service-card group transform transition duration-300 hover:scale-105 shadow-lg p-4 rounded-lg">
         <img src="./public/iron.jpg" alt="Ironing Service" className="w-full h-48 object-cover rounded-md" />
-        <h3 className="text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer">Ironing Service</h3>
+        <Link className="mr-7 text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer flex justify-center items-center" to="/services/ironing">Ironing</Link>
     </div>
 </div>
 

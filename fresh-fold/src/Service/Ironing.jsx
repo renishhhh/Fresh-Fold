@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
 
 const mensWearItems = [
-    { name: "Suit", price: 180, category: "Men's Wear" },
+    { name: "Suit/Coat/Jacket", price: 180, category: "Men's Wear" },
     { name: "Top Wear", price: 40, category: "Men's Wear" },
     { name: "Bottom Wear", price: 40, category: "Men's Wear" },
     { name: "Sherwani", price: 300, category: "Men's Wear" },
-    { name: "Jackets", price: 150, category: "Men's Wear" },
+    { name: "Kurta", price: 150, category: "Men's Wear" },
     { name: "Inners", price: 25, category: "Men's Wear" },
     { name: "Winter Wear", price: 50, category: "Men's Wear" }
 ];
 
 const womensWearItems = [
-    { name: "Home Wear", price: 40, category: "Women's Wear" },
-    { name: "Jaar", price: 40, category: "Women's Wear" },
-    { name: "Kameez", price: 60, category: "Women's Wear" },
-    { name: "Long Dress", price: 50, category: "Women's Wear" },
+    { name: "Top Wear", price: 40, category: "Women's Wear" },
+    { name: "Lehenga", price: 40, category: "Women's Wear" },
+    { name: "Dupatta", price: 60, category: "Women's Wear" },
+    { name: "Shawl", price: 50, category: "Women's Wear" },
     { name: "Winter Wear", price: 100, category: "Women's Wear" },
     { name: "Blazer/Coat", price: 180, category: "Women's Wear" },
     { name: "Bottom Wear", price: 80, category: "Women's Wear" },
-    { name: "Inner Wear", price: 50, category: "Women's Wear" }
+    { name: "Saree", price: 50, category: "Women's Wear" }
 ];
 
 const householdandaccessoriesItems = [
@@ -29,6 +29,7 @@ const householdandaccessoriesItems = [
     { name: "Table Mat", price: 70, category: "Household & Accessories" },
     { name: "Caps/Hats", price: 70, category: "Household & Accessories" }
 ];
+
 
 
 const WearDropdown = ({ items, title, addToBag, isOpen, toggleDropdown }) => (
@@ -106,7 +107,7 @@ const Bag = ({ bagItems, updateItemQuantity, deliveryCharge = 40 }) => {
     );
 };
 
-const Laundry = () => {
+const Ironing = () => {
     const [bagItems, setBagItems] = useState([]);
     const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -137,7 +138,7 @@ const Laundry = () => {
 
     return (
         <>
-            <h1 className="text-3xl ml-5 text-sky-600 font-semibold p-7">Laundry Services</h1>
+            <h1 className="text-3xl ml-5 text-sky-600 font-semibold p-7">Ironing Services</h1>
             <div className="flex justify-center gap-5 p-6 w-full">
                 <div className="w-1/5"></div>
 
@@ -180,4 +181,4 @@ const Laundry = () => {
     );
 };
 
-export default Laundry;
+export default Ironing;

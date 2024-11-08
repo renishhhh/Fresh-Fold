@@ -1,33 +1,12 @@
 import React, { useState } from 'react';
 
-const mensWearItems = [
-    { name: "Suit", price: 180, category: "Men's Wear" },
-    { name: "Top Wear", price: 40, category: "Men's Wear" },
-    { name: "Bottom Wear", price: 40, category: "Men's Wear" },
-    { name: "Sherwani", price: 300, category: "Men's Wear" },
-    { name: "Jackets", price: 150, category: "Men's Wear" },
-    { name: "Inners", price: 25, category: "Men's Wear" },
-    { name: "Winter Wear", price: 50, category: "Men's Wear" }
-];
-
-const womensWearItems = [
-    { name: "Home Wear", price: 40, category: "Women's Wear" },
-    { name: "Jaar", price: 40, category: "Women's Wear" },
-    { name: "Kameez", price: 60, category: "Women's Wear" },
-    { name: "Long Dress", price: 50, category: "Women's Wear" },
-    { name: "Winter Wear", price: 100, category: "Women's Wear" },
-    { name: "Blazer/Coat", price: 180, category: "Women's Wear" },
-    { name: "Bottom Wear", price: 80, category: "Women's Wear" },
-    { name: "Inner Wear", price: 50, category: "Women's Wear" }
-];
-
-const householdandaccessoriesItems = [
-    { name: "Travel Bag", price: 100, category: "Household & Accessories" },
-    { name: "Blanket", price: 70, category: "Household & Accessories" },
-    { name: "Towel", price: 40, category: "Household & Accessories" },
-    { name: "Pillow Case", price: 60, category: "Household & Accessories" },
-    { name: "Table Mat", price: 70, category: "Household & Accessories" },
-    { name: "Caps/Hats", price: 70, category: "Household & Accessories" }
+const ShoeCleaningItems = [
+    { name: "Basic Shoe Cleaning", price: 100, category: " Shoe Cleaning Service" },
+    { name: "Leather Shoe Cleaning", price: 150, category: " Shoe Cleaning Service" },
+    { name: "Suede Shoe Cleaning", price: 180, category: " Shoe Cleaning Service" },
+    { name: "Sports Shoes Cleaning", price: 120, category: " Shoe Cleaning Service" },
+    { name: "Shoe Polishing", price: 80, category: " Shoe Cleaning Service" },
+    { name: "Boot Cleaning", price: 200, category: " Shoe Cleaning Service" }
 ];
 
 
@@ -106,7 +85,7 @@ const Bag = ({ bagItems, updateItemQuantity, deliveryCharge = 40 }) => {
     );
 };
 
-const Laundry = () => {
+const ShoeCleaning = () => {
     const [bagItems, setBagItems] = useState([]);
     const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -137,36 +116,20 @@ const Laundry = () => {
 
     return (
         <>
-            <h1 className="text-3xl ml-5 text-sky-600 font-semibold p-7">Laundry Services</h1>
+            <h1 className="text-3xl ml-5 text-sky-600 font-semibold p-7">Shoe Cleaning Services</h1>
             <div className="flex justify-center gap-5 p-6 w-full">
                 <div className="w-1/5"></div>
 
                 <div className="w-2/5 flex flex-col gap-5">
                     <WearDropdown
-                        items={mensWearItems}
-                        title="Men's Wear"
+                        items={ShoeCleaningItems}
+                        title="Shoe Cleaning"
                         addToBag={addToBag}
                         isOpen={openDropdown === 'mens'}
                         toggleDropdown={() => setOpenDropdown(openDropdown === 'mens' ? null : 'mens')}
                     />
-                    {openDropdown !== 'mens' && (
-                        <WearDropdown
-                            items={womensWearItems}
-                            title="Women's Wear"
-                            addToBag={addToBag}
-                            isOpen={openDropdown === 'womens'}
-                            toggleDropdown={() => setOpenDropdown(openDropdown === 'womens' ? null : 'womens')}
-                        />
-                    )}
-                    {openDropdown !== 'mens' && openDropdown !== 'womens' && (
-                        <WearDropdown
-                            items={householdandaccessoriesItems}
-                            title="Household & Accessories"
-                            addToBag={addToBag}
-                            isOpen={openDropdown === 'household'}
-                            toggleDropdown={() => setOpenDropdown(openDropdown === 'household' ? null : 'household')}
-                        />
-                    )}
+                   
+                   
                    
                 </div>
 
@@ -180,4 +143,4 @@ const Laundry = () => {
     );
 };
 
-export default Laundry;
+export default ShoeCleaning;
