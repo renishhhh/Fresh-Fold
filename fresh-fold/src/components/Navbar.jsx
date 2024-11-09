@@ -11,7 +11,7 @@ const Navbar = () => {
             <img className='w-20' src="./public/favicon.png" alt="Logo" />
             <span className="ml-1 text-3xl font-bebas font-bold">Fresh Fold</span>
           </Link>
-          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center ">
+          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center justify-center text-lg ">
             <Link className="mr-5 text-zinc-900 font-semibold hover:text-zinc-700 hover:underline cursor-pointer" to="/">Home</Link>
             <Link className="mr-5 text-zinc-900 font-semibold hover:text-zinc-700 hover:underline cursor-pointer" to="/about">About Us</Link>
             <Link className="mr-5 text-zinc-900 font-semibold hover:text-zinc-700 hover:underline cursor-pointer" to="/services">Services</Link>
