@@ -1,20 +1,34 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <div>
       <header className="text-gray-600 body-font fixed top-0 left-0 w-full z-50 bg-[#f0ffff] shadow-md">
-        <div className="container mx-auto flex flex-wrap p-[0.7rem] flex-col md:flex-row items-center">
+        <div className="container mx-auto flex flex-wrap p-[0.6rem] flex-col md:flex-row items-center">
           <Link className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" to="/">
             <img className='w-20' src="./public/favicon.png" alt="Logo" />
             <span className="ml-1 text-3xl font-bebas font-bold">Fresh Fold</span>
           </Link>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center justify-center text-lg ">
-            <Link className="mr-5 text-zinc-900 font-semibold hover:text-zinc-700 hover:underline cursor-pointer" to="/">Home</Link>
-            <Link className="mr-5 text-zinc-900 font-semibold hover:text-zinc-700 hover:underline cursor-pointer" to="/about">About Us</Link>
-            <Link className="mr-5 text-zinc-900 font-semibold hover:text-zinc-700 hover:underline cursor-pointer" to="/services">Services</Link>
+            <Link 
+              className={`mr-5 text-zinc-900 font-semibold ${location.pathname === '/' ? 'underline' : 'hover:text-zinc-700'}`} 
+              to="/">
+              Home
+            </Link>
+            <Link 
+              className={`mr-5 text-zinc-900 font-semibold ${location.pathname === '/about' ? 'underline' : 'hover:text-zinc-700'}`} 
+              to="/about">
+              About Us
+            </Link>
+            <Link 
+              className={`mr-5 text-zinc-900 font-semibold ${location.pathname === '/services' ? 'underline' : 'hover:text-zinc-700'}`} 
+              to="/services">
+              Services
+            </Link>
             <ScrollLink 
               to="contact-section" 
               smooth={true} 
@@ -32,7 +46,7 @@ const Navbar = () => {
         </div>
       </header>
       {/* Add some margin-top to prevent the content from hiding under the navbar */}
-      <div className="mt-[190px]"></div>
+      <div className="mt-[100px]"></div>
     </div>
   );
 };
