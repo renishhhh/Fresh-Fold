@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "672af60f04a87d3bf42710c3"
+  },
+  "order_id": {
+    "$oid": "672af15704a87d3bf42710c2"
+  },
+  "cloth_type": [
+    "shirt",
+    "T-shirt"
+  ],
+  "service": [
+    "iron",
+    "iron"
+  ],
+  "quantity": [
+    4,
+    4
+  ]
+},
+{
+  "_id": {
+    "$oid": "672af73e04a87d3bf42710c4"
+  },
+  "order_id": {
+    "$oid": "672af15704a87d3bf42710c2"
+  },
+  "cloth_type": [
+    "shirt",
+    "T-shirt"
+  ],
+  "service": [
+    "iron",
+    "iron"
+  ],
+  "quantity": [
+    4,
+    4
+  ],
+  "Cost": 56
+}]
