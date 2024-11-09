@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "672aeca804a87d3bf42710bd"
+  },
+  "cloth_type": "Shirt",
+  "iron": 8,
+  "iron_wash": 15
+},
+{
+  "_id": {
+    "$oid": "672aeca804a87d3bf42710be"
+  },
+  "cloth_type": "pants",
+  "iron": 7,
+  "iron_wash": 12
+},
+{
+  "_id": {
+    "$oid": "672aeca804a87d3bf42710bf"
+  },
+  "cloth_type": "T-shirt",
+  "iron": 6,
+  "iron_wash": 10
+},
+{
+  "_id": {
+    "$oid": "672aeca804a87d3bf42710c0"
+  },
+  "cloth_type": "Jeans",
+  "iron": 7,
+  "iron_wash": 15
+},
+{
+  "_id": {
+    "$oid": "672aeca804a87d3bf42710c1"
+  },
+  "cloth_type": "Saree",
+  "iron": 50,
+  "iron_wash": 75
+}]
