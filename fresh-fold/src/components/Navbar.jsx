@@ -1,46 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  // Function to check token in localStorage
-  const checkToken = () => {
-    const token = localStorage.getItem('token');
-    console.log("Token from localStorage:", token); // Debugging
-    setIsLoggedIn(!!token);
-  };
-
-  // Check token when the component mounts and whenever localStorage changes
-  useEffect(() => {
-    checkToken(); // Check token initially
-
-    // Listen for storage changes (in case the token is updated from another tab/window)
-    window.addEventListener('storage', checkToken);
-
-    return () => {
-      // Clean up the event listener when the component is unmounted
-      window.removeEventListener('storage', checkToken);
-    };
-  }, []);
-
-  const handleLogout = () => {
-    localStorage.removeItem('token'); // Remove token from localStorage
-    checkToken(); // Update the state after logout
-  };
-
   return (
     <div>
-      <header className="text-gray-600 body-font">
+      <header className="text-gray-600 body-font ">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" to="/">
             <img className="w-20" src="./public/favicon.png" alt="Logo" />
             <span className="ml-1 text-3xl font-bebas font-bold">Fresh Fold</span>
           </Link>
-          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center ">
             <Link className="mr-5 text-zinc-900 font-semibold hover:text-zinc-700 hover:underline cursor-pointer" to="/">Home</Link>
             <Link className="mr-5 text-zinc-900 font-semibold hover:text-zinc-700 hover:underline cursor-pointer" to="/about">About Us</Link>
             <Link className="mr-5 text-zinc-900 font-semibold hover:text-zinc-700 hover:underline cursor-pointer" to="/services">Services</Link>
+            <ScrollLink 
+              to="contact-section" 
+              smooth={true} 
+              duration={500} 
+              className="mr-5 text-zinc-900 font-semibold hover:text-zinc-700 hover:underline cursor-pointer">
+              Contact
+            </ScrollLink>
           </nav>
 
           {/* Conditionally render Login or Signed In button */}
@@ -63,6 +44,8 @@ const Navbar = () => {
           )}
         </div>
       </header>
+      {/* Add some margin-top to prevent the content from hiding under the navbar */}
+      <div className="mt-[100px]"></div>
     </div>
   );
 };

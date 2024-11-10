@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "672aeae404a87d3bf42710bc"
+  },
+  "f_name": "Gopal",
+  "l_name": "Singh",
+  "mob_no": 9233569807,
+  "email": "gopalsingh22@gmail.com",
+  "address": "Flat no. 506, Amrut building, Pune"
+}]

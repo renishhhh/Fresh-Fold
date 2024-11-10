@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "672af15704a87d3bf42710c2"
+  },
+  "customer_id": {
+    "$oid": "672aeae404a87d3bf42710bc"
+  },
+  "order_date": {
+    "$date": "2024-11-06T00:00:00.000Z"
+  },
+  "pickup_date": {
+    "$date": "2024-11-08T00:00:00.000Z"
+  },
+  "pickup_time": "7 PM",
+  "status": "In Progress"
+}]
