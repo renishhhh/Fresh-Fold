@@ -37,4 +37,4 @@ npm install
 **Run the web application**
 npm run dev
 
-**Fresh-Fold Website Link**: Fresh--Fold.vercel.app
+**Fresh-Fold Website Link**: https://fresh--fold.vercel.app/
