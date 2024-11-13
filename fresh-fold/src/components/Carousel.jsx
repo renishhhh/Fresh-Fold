@@ -5,9 +5,9 @@ const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    { src: "./public/carousel1.png", alt: "First slide",  },
-    { src: "./public/carousel2.png", alt: "Second slide" },
-    { src: "./public/carousel3.png", alt: "Third slide" }
+    { src: "./carousel1.png", alt: "First slide",  },
+    { src: "./carousel2.png", alt: "Second slide" },
+    { src: "./carousel3.png", alt: "Third slide" }
   ];
 
   const handlePrev = () => {

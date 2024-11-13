@@ -8,9 +8,9 @@ const jwt = require("jsonwebtoken");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Middleware
+
 app.use(cors());
-app.use(express.json()); // Use express.json() for parsing JSON bodies
+app.use(express.json());
 
 // Connect to MongoDB
 mongoose.connect("mongodb://localhost:27017/freshfold", {
@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
     password: { type: String, required: true }
 });
 
-const User = mongoose.model("User", userSchema, "customer"); // Fix extra space in model name
+const User = mongoose.model("User", userSchema, "customer");
 
 // Register Route
 app.post("/users/register", async (req, res) => {

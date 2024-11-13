@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <>
     <div className="relative">
-                <img src="./public/services.jpg" alt="" className="w-full h-96 object-cover" />
+                <img src="./services.jpg" alt="" className="w-full h-96 object-cover" />
                 <div className="absolute inset-0 flex items-center justify-center">
                     <h2 className=" text-7xl font-bold font-bebas text-black">Our Services</h2>
                 </div>
@@ -15,7 +15,7 @@ const Services = () => {
             <div className="services-section grid grid-cols-1 md:grid-cols-4 gap-6 p-10">
     {/* Card 1 - Laundry */}
     <div className="service-card group transform transition duration-300 hover:scale-105 shadow-lg p-4 rounded-lg">
-        <img src="./public/laundry.jpg" alt="Laundry" className="w-full h-48 object-cover rounded-md" />
+        <img src="./laundry.jpg" alt="Laundry" className="w-full h-48 object-cover rounded-md" />
         <Link className="mr-7 text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer flex justify-center items-center" to="/services/laundry">Laundry</Link>
 
     </div>
@@ -23,19 +23,19 @@ const Services = () => {
     {/* Card 2 - Dry Cleaning */}
     
     <div className="service-card group transform transition duration-300 hover:scale-105 shadow-lg p-4 rounded-lg">
-        <img src="./public/dryclean.jpg" alt="Dry Cleaning" className="w-full h-48 object-cover rounded-md" />
+        <img src="./dryclean.jpg" alt="Dry Cleaning" className="w-full h-48 object-cover rounded-md" />
         <Link className="mr-7 text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer flex justify-center items-center" to="/services/drycleaning">Dry Cleaning</Link>
     </div>
 
     {/* Card 3 - Shoe Cleaning */}
     <div className="service-card group transform transition duration-300 hover:scale-105 shadow-lg p-4 rounded-lg">
-        <img src="./public/shoeclean.avif" alt="Shoe Cleaning" className="w-full h-48 object-cover rounded-md" />
+        <img src="./shoeclean.avif" alt="Shoe Cleaning" className="w-full h-48 object-cover rounded-md" />
         <Link className="mr-7 text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer flex justify-center items-center" to="/services/shoecleaning">Shoe Cleaning</Link>
     </div>
 
     {/* Card 4 - Ironing Service */}
     <div className="service-card group transform transition duration-300 hover:scale-105 shadow-lg p-4 rounded-lg">
-        <img src="./public/iron.jpg" alt="Ironing Service" className="w-full h-48 object-cover rounded-md" />
+        <img src="./iron.jpg" alt="Ironing Service" className="w-full h-48 object-cover rounded-md" />
         <Link className="mr-7 text-xl font-bold text-center mt-4 text-gray-800 group-hover:text-blue-600 cursor-pointer flex justify-center items-center" to="/services/ironing">Ironing</Link>
     </div>
 </div>

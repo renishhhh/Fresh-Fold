@@ -22,7 +22,7 @@ const Navbar = () => {
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" to="/">
-            <img className="w-20" src="./public/favicon.png" alt="Logo" />
+            <img className="w-20" src="./favicon.png" alt="Logo" />
             <span className="ml-1 text-3xl font-bebas font-bold">Fresh Fold</span>
           </Link>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
