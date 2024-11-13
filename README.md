@@ -31,7 +31,7 @@ Clone the Repository:
 git clone https://github.com/renishhhh/FreshFold.git
 
 **Install Dependencies:**
-cd FreshFold
+cd FreshFold <br>
 npm install
 
 **Run the web application**
