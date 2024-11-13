@@ -34,8 +34,7 @@ git clone https://github.com/renishhhh/FreshFold.git
 cd FreshFold
 npm install
 
-#**Run the web application**
+**Run the web application**
 npm run dev
 
-#Fresh-Fold Website Linnk
-#Fresh--Fold.vercel.app
+**Fresh-Fold Website Link**: Fresh--Fold.vercel.app
