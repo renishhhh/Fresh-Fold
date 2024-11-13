@@ -30,7 +30,7 @@ AWS Account (for deployment)
 Clone the Repository:
 git clone https://github.com/renishhhh/FreshFold.git
 
-**Install Dependencies:**
+**Install Dependencies:** <br>
 cd FreshFold <br>
 npm install
 
