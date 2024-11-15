@@ -35,8 +35,10 @@ git clone https://github.com/renishhhh/FreshFold.git
 **Install Dependencies:** <br>
 ``` bash
 cd FreshFold
-``` <br>
-``` bash
+```
+<br>
+
+```bash
 npm install
 ```
 
