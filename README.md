@@ -28,13 +28,22 @@ AWS Account (for deployment)
 
 # **INSTALLATION**
 Clone the Repository:
+``` bash
 git clone https://github.com/renishhhh/FreshFold.git
+```
 
 **Install Dependencies:** <br>
-cd FreshFold <br>
+``` bash
+cd FreshFold
+``` <br>
+``` bash
 npm install
+```
 
 **Run the web application**
 npm run dev
 
-**Fresh-Fold Website Link**: https://fresh--fold.vercel.app/
+**Fresh-Fold Website Link**: 
+``` bash
+https://fresh--fold.vercel.app/
+```
