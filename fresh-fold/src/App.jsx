@@ -12,6 +12,7 @@ import Laundry from './Service/Laundry'
 import DryCleaning from './Service/DryCleaning'
 import ShoeCleaning from './Service/ShoeCleaning'
 import Ironing from './Service/Ironing'
+import Chatbox from './components/Chatbox'
 
 const MainLayout = () => (
   <>
@@ -21,6 +22,7 @@ const MainLayout = () => (
       <Contact />
     </div>
     <Footer />
+    <Chatbox />
   </>
 );
 
