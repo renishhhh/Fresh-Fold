@@ -13,6 +13,8 @@ import DryCleaning from './Service/DryCleaning'
 import ShoeCleaning from './Service/ShoeCleaning'
 import Ironing from './Service/Ironing'
 import Chatbox from './components/Chatbox'
+import Dashboard from './components/Dashboard'
+
 
 const MainLayout = () => (
   <>
@@ -50,6 +52,11 @@ function App() {
     {
       path: "/services",
       element: <><Navbar /><Services/><Contact /><Footer/></>,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/dashboard",
+      element: <><Navbar /><Dashboard/><Contact /><Footer/></>,
       errorElement: <ErrorPage />,
     },
     {
