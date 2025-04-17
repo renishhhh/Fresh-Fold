@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bell, ShoppingCart, Users, DollarSign, Calendar, PieChart, TrendingUp, Settings, HelpCircle, Menu, X } from 'lucide-react';
+import { Bell, ShoppingCart, Users, IndianRupeeIcon, Calendar, PieChart, TrendingUp, Settings, HelpCircle, Menu, X } from 'lucide-react';
 
 const Dashboard = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -9,16 +9,16 @@ const Dashboard = () => {
   const stats = [
     { title: "Total Orders", value: "1,284", icon: <ShoppingCart />, change: "+12%", color: "bg-blue-100" },
     { title: "Active Customers", value: "842", icon: <Users />, change: "+7%", color: "bg-green-100" },
-    { title: "Revenue", value: "$28,459", icon: <DollarSign />, change: "+18%", color: "bg-purple-100" },
+    { title: "Revenue", value: "₹28,459", icon: <IndianRupeeIcon />, change: "+18%", color: "bg-purple-100" },
     { title: "Pending Orders", value: "38", icon: <Calendar />, change: "-5%", color: "bg-yellow-100" }
   ];
 
   const recentOrders = [
-    { id: "#ORD-7895", customer: "Jane Cooper", service: "Wash & Fold", status: "Completed", amount: "$49.99" },
-    { id: "#ORD-7896", customer: "Robert Fox", service: "Dry Cleaning", status: "Processing", amount: "$78.50" },
-    { id: "#ORD-7897", customer: "Esther Howard", service: "Wash & Iron", status: "Pending", amount: "$32.00" },
-    { id: "#ORD-7898", customer: "Cameron Wilson", service: "Wash & Fold", status: "Delivered", amount: "$45.50" },
-    { id: "#ORD-7899", customer: "Leslie Alexander", service: "Specialty Clean", status: "Processing", amount: "$120.00" }
+    { id: "#ORD-7895", customer: "Jane Cooper", service: "Wash & Fold", status: "Completed", amount: "₹50" },
+    { id: "#ORD-7896", customer: "Robert Fox", service: "Dry Cleaning", status: "Processing", amount: "₹78" },
+    { id: "#ORD-7897", customer: "Esther Howard", service: "Wash & Iron", status: "Pending", amount: "₹32" },
+    { id: "#ORD-7898", customer: "Cameron Wilson", service: "Wash & Fold", status: "Delivered", amount: "₹45" },
+    { id: "#ORD-7899", customer: "Leslie Alexander", service: "Specialty Clean", status: "Processing", amount: "₹120" }
   ];
 
   const getStatusColor = (status) => {
